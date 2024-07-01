@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply transition-all duration-300;
+}
+
+#currentNumb:focus-visible {
+  @apply border-[#D3D944] outline-none;
+}
+
+#currentNumb:focus {
+  @apply border-[#D3D944];
+}
+
+#currentNumb:focus + #pound {
+  @apply !bg-[#D3D944] rounded-none;
+}
+
+#currentYear:focus-visible {
+  @apply border-[#D3D944] outline-none;
+}
+
+#currentYear:focus {
+  @apply border-[#D3D944];
+}
+
+#currentYear:focus + #year {
+  @apply !bg-[#D3D944] rounded-none;
+}
+
+#currentPercent:focus-visible {
+  @apply border-[#D3D944] outline-none;
+}
+
+#currentPercent:focus {
+  @apply border-[#D3D944];
+}
+
+#currentPercent:focus + #percent {
+  @apply !bg-[#D3D944] rounded-none;
+}
