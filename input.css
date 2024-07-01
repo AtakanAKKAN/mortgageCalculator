@@ -41,3 +41,54 @@ body {
 #currentPercent:focus + #percent {
   @apply !bg-[#D3D944] rounded-none;
 }
+
+#currentNumb:user-invalid {
+  border-color: #e83a2e;
+}
+
+#currentNumb + #currentRequire {
+  display: none;
+}
+
+#currentNumb:user-invalid + #currentRequire {
+  display: inline;
+  color: #e83a2e;
+}
+
+#currentNumb:user-invalid ~ #pound {
+  @apply bg-[#e83a2e];
+}
+
+#currentYear:user-invalid {
+  border-color: #e83a2e;
+}
+
+#currentYear + #yearRequire {
+  display: none;
+}
+
+#currentYear:user-invalid + #yearRequire {
+  display: inline;
+  color: #e83a2e;
+}
+
+#currentYear:user-invalid ~ #year {
+  @apply bg-[#e83a2e];
+}
+
+#currentPercent:user-invalid {
+  border-color: #e83a2e;
+}
+
+#currentPercent + #percenetRequire {
+  display: none;
+}
+
+#currentPercent:user-invalid + #percenetRequire {
+  display: inline;
+  color: #e83a2e;
+}
+
+#currentPercent:user-invalid ~ #percent {
+  @apply bg-[#e83a2e];
+}
